@@ -3,7 +3,9 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
-      <router-link to="/list">List</router-link>
+      <router-link to="/list">List</router-link> |
+      <router-link to="/drawer">Drawer</router-link> |
+      <router-link to="/cards">Cards</router-link>
     </div>
 
     <transition name="slide-fade" mode="out-in">
@@ -22,9 +24,8 @@
 }
 
 button {
-  width: 5em;
-  height: 2em;
   margin: 0.5em;
+  padding: 0.5rem;
   border-radius: 5px;
   background: linear-gradient(to right, #16c0b0, #84cf6a);
   font-size: 1em;
@@ -32,6 +33,14 @@ button {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 #nav {
